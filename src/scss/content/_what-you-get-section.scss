@@ -1,0 +1,117 @@
+.what-you-get {
+  position: relative;
+  &__wrapper {
+    padding-top: 37px;
+    padding-bottom: 10px;
+    text-align: center;
+  }
+  &__title {
+    font-family: $font-Montserrat;
+    font-weight: bold;
+    font-size: 32px;
+    color: #8d81ac;
+    @include margin-bottom(36px);
+  }
+  &__item-img-container {
+    @include margin-bottom(27px);
+  }
+  &__item-main-container {
+    @include margin-bottom(38px);
+  }
+  &__item-title {
+    font-family: $font-Montserrat;
+    font-size: 16px;
+    font-weight: 300;
+    color: #323232;
+    @include margin-bottom(14px);
+  }
+  &__item-text {
+    font-family: $font-Lato;
+    font-size: 14px;
+    color: #848e97;
+    line-height: 21px;
+  }
+  &__main-img {
+    width: 103%;
+    &--desktop {
+      display: none;
+    }
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .what-you-get {
+    &__wrapper {
+      padding-top: 32px;
+    }
+    &__title {
+      font-size: 42px;
+    }
+    &__content-block {
+      display: flex;
+      justify-content: space-between;
+      &:last-child {
+        @include margin-bottom(30px);
+      }
+    }
+    &__item-img-container {
+      width: 30%;
+      margin: 0;
+    }
+    &__item-main-container {
+      text-align: start;
+      width: 70%;
+    }
+    &__main-img {
+      width: 100%;
+      &--mobile {
+        display: none;
+      }
+      &--desktop {
+        display: flex;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .what-you-get {
+    background: #f4f4f4;
+    &__wrapper {
+      padding-top: 98px;
+      padding-bottom: 52px;
+      display: flex;
+      position: relative;
+      align-items: center;
+    }
+    &__title {
+      font-size: 34px;
+      position: absolute;
+      top: 96px;
+      right: 32px;
+    }
+    &__content {
+      width: 47%;
+    }
+    &__main-img {
+      max-height: 518px;
+      max-width: 750px;
+      width: 46%;
+      right: 0px;
+      top: 140px;
+      position: absolute;
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .what-you-get {
+    &__title {
+      font-size: 46px;
+      right: 28px;
+    }
+    &__main-img {
+      width: 50%;
+    }
+  }
+}

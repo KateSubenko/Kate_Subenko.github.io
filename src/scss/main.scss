@@ -1,0 +1,21 @@
+@import "./mixins";
+@import "./vars";
+
+.wrapper {
+  padding-left: 10px;
+  padding-right: 10px;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 1200px) {
+  .wrapper {
+    max-width: 1200px;
+  }
+}
+
+@import "content/header-content-section";
+@import "content/header-main-section";
+@import "content/editor-section";
+@import "content/what-you-get-section";
+@import "content/talking-about-fork-section";
+@import "content/pricing-section";

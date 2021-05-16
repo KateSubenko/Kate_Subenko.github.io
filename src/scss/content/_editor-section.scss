@@ -1,0 +1,136 @@
+.editor {
+  &__wrapper {
+    padding-top: 130px;
+    padding-bottom: 66px;
+    text-align: center;
+  }
+  &__title {
+    font-family: $font-Montserrat;
+    font-weight: bold;
+    font-size: 26px;
+    text-transform: uppercase;
+    color: #635c73;
+    @include margin-bottom(27px);
+  }
+  &__text {
+    font-family: $font-Lato;
+    font-size: 14px;
+    color: #323232;
+    line-height: 20px;
+    @include margin-bottom(36px);
+  }
+  &__git-buttons {
+    height: 89px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+}
+
+.git-buttons {
+  &__button {
+    width: fit-content;
+    border: 1px solid#d3d3d3;
+    border-radius: 4px;
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+    height: fit-content;
+  }
+  &__button-main {
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+    border: none;
+    border-right: 1px solid #d3d3d3;
+    padding: 5px 7px;
+    font-weight: bold;
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+    &--watch {
+      &::before {
+        content: ' ';
+        background-image: url('../img/editor-section/eye-git-icon.svg');
+        background-size: 12px 12px;
+        height: 12px;
+        width: 12px;
+        display: inline-block;
+        margin-right: 5px;
+      }
+    }
+    &--star {
+      &::before {
+        content: ' ';
+        background-image: url('../img/editor-section/star-git-icon.svg');
+        background-size: 12px 12px;
+        height: 12px;
+        width: 12px;
+        display: inline-block;
+        margin-right: 5px;
+      }
+    }
+    &--fork {
+      &::before {
+        content: ' ';
+        background-image: url('../img/editor-section/fork-git-icon.svg');
+        background-size: 12px 12px;
+        height: 12px;
+        width: 12px;
+        display: inline-block;
+        margin-right: 5px;
+      }
+    }
+  }
+  &__button-count-of-clicks {
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 5px 7px;
+    font-weight: bold;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .editor {
+    &__wrapper {
+      padding-top: 158px;
+      padding-bottom: 98px;
+      width: 84%;
+    }
+    &__title {
+      font-size: 42px;
+    }
+    &__text {
+      font-size: 21px;
+      line-height: 32px;
+    }
+    &__git-buttons {
+      margin: 0 auto;
+      height: fit-content;
+    }
+  }
+}
+
+@media screen and (min-width: 660px) {
+  .editor {
+    &__git-buttons {
+      width: 60%;
+    }
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .editor {
+    &__wrapper {
+      padding-top: 122px;
+      padding-bottom: 70px;
+    }
+    &__title {
+      font-size: 54px;
+    }
+    &__git-buttons {
+      width: 41%;
+    }
+  }
+}

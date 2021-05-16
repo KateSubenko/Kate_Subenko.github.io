@@ -1,0 +1,151 @@
+@import "vars";
+.header {
+   &__text-section {
+      max-width: 300px;
+      width: 100%;
+      margin: 0 auto;
+
+      font-family: $font-Montserrat;
+   }
+   &__main-title {
+      margin-top: 50px;
+      text-align: center;
+
+      font-weight: bold;
+      font-size: 48px;
+      color: #ffffff;
+   }
+   &__subtitle {
+      margin-top: 20px;
+      text-align: center;
+      font-weight: normal;
+      font-size: 18px;
+      line-height: 24px;
+
+      color: $purple;
+   }
+   &__text {
+      margin-top: 14px;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 14px;
+      font-size: 14px;
+
+      text-align: center;
+      color: #848e97;
+      text-transform: uppercase;
+   }
+   &__download {
+      position: absolute;
+      top: 647.5px;
+      left: 50%;
+      transform: translate(-50%, 0);
+   }
+   &__btn--download {
+      width: 230px;
+   }
+}
+.btn--download__description {
+   display: flex;
+   justify-content: space-around;
+   margin-top: 20px;
+   font-size: 14px;
+   color: #848e97;
+}
+@media (min-width: 410px) {
+   .header__text-section {
+      max-width: 350px;
+   }
+}
+@media (min-width: 460px) {
+   .header__text-section {
+      max-width: 400px;
+   }
+}
+@media (min-width: 550px) {
+   .header {
+      &__text-section {
+         max-width: 490px;
+      }
+      &__main-title {
+         font-size: 52px;
+      }
+      &__subtitle {
+         font-size: 20px;
+      }
+      &__text {
+         font-size: 15px;
+      }
+      &__download {
+         top: 651.5px;
+      }
+      &__btn--download {
+         width: 250px;
+      }
+   }
+}
+@media (min-width: 670px) {
+   .header {
+      &__text-section {
+         max-width: 600px;
+      }
+      &__download {
+         top: 649px;
+      }
+   }
+}
+@media (min-width: 768px) {
+   .header {
+      &__text-section {
+         max-width: 700px;
+      }
+      &__main-title {
+         font-size: 72px;
+      }
+      &__subtitle {
+         font-size: 24px;
+      }
+      &__text {
+         font-size: 15px;
+      }
+      &__download {
+         top: 668px;
+      }
+      &__btn--download {
+         width: 280px;
+         padding: 12px 0;
+      }
+   }
+}
+@media (min-width: 900px) {
+   .header {
+      &__download {
+         top: 644px;
+      }
+   }
+}
+
+@media (min-width: 1200px) {
+   .header {
+      &__text-section {
+         max-width: 1000px;
+      }
+      &__main-title {
+         font-size: 82px;
+      }
+      &__subtitle {
+         margin-top: 24px;
+         font-size: 30px;
+      }
+      &__text {
+         font-size: 16px;
+      }
+      &__download {
+         top: 658px;
+      }
+      &__btn--download {
+         width: 320px;
+         padding: 10px 60px;
+      }
+   }
+}
